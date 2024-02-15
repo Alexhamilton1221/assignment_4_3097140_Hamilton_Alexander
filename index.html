@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monster Management</title>
+  </head>
+  <body>
+    <h1>Monster Management</h1>
+
+    <!-- List of Monsters -->
+    <h2>Monsters</h2>
+    <ul id="monster-list">
+      <!-- Monsters will be displayed here -->
+    </ul>
+
+    <!-- Buttons for CRUD Operations -->
+    <h2>Actions</h2>
+    <button onclick="getAllMonsters()">Get All Monsters</button>
+    <button onclick="addMonster()">Add Monster</button>
+    <!-- Add buttons for other CRUD operations -->
+
+    <!-- Form for Adding a Monster -->
+    <h2>Add Monster</h2>
+    <form id="add-monster-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br />
+      <label for="imageUrl">Image URL:</label>
+      <input type="text" id="imageUrl" name="imageUrl" required /><br />
+      <!-- Add input fields for other attributes -->
+      <button type="submit">Add Monster</button>
+    </form>
+
+    <!-- Form for Updating a Monster -->
+    <h2>Update Monster</h2>
+    <form id="update-monster-form">
+      <label for="updateName">Name:</label>
+      <input type="text" id="updateName" name="updateName" required /><br />
+      <label for="updateImageUrl">Image URL:</label>
+      <input
+        type="text"
+        id="updateImageUrl"
+        name="updateImageUrl"
+        required
+      /><br />
+      <!-- Add input fields for other attributes -->
+      <button type="submit">Update Monster</button>
+    </form>
+
+    <script src="frontend.js"></script>
+    <!-- Include your frontend JavaScript file -->
+
+    <ul id="monster-list"></ul>
+  </body>
+</html>
