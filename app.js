@@ -5,8 +5,10 @@ import indexRouter from "./routes/index.js";
 import usersRouter from "./routes/users.js";
 import mongoose from "mongoose";
 
-mongoose.connect("mongodb://localhost/assignment-4-3097140-hamilton-alexander");
-
+mongoose.connect(
+  process.env.DATABASE_URL ||
+    "mongodb://localhost/assignment-4-3097140-hamilton-alexander"
+);
 const app = express();
 
 app.use(logger("dev"));
